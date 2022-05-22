@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Student_Attendance</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_activity_faculty">FacultyActivity</string>
+    <string name="title_activity_add_faculty">AddFacultyActivity</string>
+    <string name="title_activity_add_student">AddStudentActivity</string>
+    <string name="title_activity_add_faculty_subject">AddFacultySubject</string>
+    <string name="title_activity_add_subject">AddSubject</string>
+    <string name="title_activity_add_course">AddCourse</string>
+    <string name="title_activity_save_course">SaveCourse</string>
+</resources>

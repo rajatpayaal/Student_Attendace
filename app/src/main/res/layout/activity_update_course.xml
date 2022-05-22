@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp" >
+        <TextView
+            android:id="@+id/Course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Update Course"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CourseId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="195dp"
+            android:text="Search Id"
+            android:textColor="#FFFFFF" />
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/courseid"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="Course Id"
+            android:paddingLeft="15dp" />
+
+
+        <EditText
+            android:id="@+id/coursename"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="Coursename"
+            android:paddingLeft="15dp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/show"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/roundedbutton"
+            android:onClick="updateUC"
+            android:text="Update"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/search"
+            android:layout_marginStart="128dp"
+            android:background="@drawable/roundedbutton"
+            android:onClick="showUC"
+            android:text="Show"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="182dp"
+            android:background="@drawable/roundedbutton"
+            android:onClick="searchUC"
+            android:text="Search"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/editTextUC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="289dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+
+    </RelativeLayout>
+</ScrollView>

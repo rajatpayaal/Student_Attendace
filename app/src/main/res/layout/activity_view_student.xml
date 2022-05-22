@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp" >
+
+        <TextView
+            android:id="@+id/textViewFormName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Student Details"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spinnercourse"
+            android:layout_marginBottom="-65dp"
+            android:text="Select Course"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinnercourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="65dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:text="Select Branch"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinnerbranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinneryear"
+            android:layout_alignTop="@+id/textView1"
+            android:text="Select Year"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinneryear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginTop="72dp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="118dp"
+            android:background="@drawable/roundedbutton"
+            android:onClick="ShowS"
+            android:text="Show"
+            android:textColor="#ffffff" />
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/searchId"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="224dp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="Search by ID"
+            android:paddingLeft="15dp" />
+
+        <Button
+            android:id="@+id/SearchIdButton"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="262dp"
+            android:background="@drawable/roundedbutton"
+            android:onClick="SearchById"
+            android:text="Search By Id"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/searchName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="Search by Name"
+            android:paddingLeft="15dp" />
+
+        <Button
+            android:id="@+id/SearchNameButton"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="375dp"
+            android:background="@drawable/roundedbutton"
+            android:onClick="SearchByName"
+            android:text="Search By Name"
+            android:textColor="#ffffff" />
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

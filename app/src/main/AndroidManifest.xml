@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sony.student_attendance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FacultyActivity"
+            android:label="@string/title_activity_faculty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddFacultyActivity"
+            android:label="@string/title_activity_add_faculty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddStudentActivity"
+            android:label="@string/title_activity_add_student"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddFacultySubject"
+            android:label="@string/title_activity_add_faculty_subject"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddSubject"
+            android:label="@string/title_activity_add_subject"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddCourse"
+            android:label="@string/title_activity_add_course"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SaveCourse"
+            android:label="@string/title_activity_save_course"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UpdateCourse" />
+        <activity android:name=".DeleteCourse" />
+        <activity android:name=".Branch" />
+        <activity android:name=".AddBranch" />
+        <activity android:name=".UpdateBranch" />
+        <activity android:name=".DeleteBranch" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".Show" />
+        <activity android:name=".AddAttendance" />
+        <activity android:name=".ViewStudent1" />
+        <activity android:name=".DetailsActivityID" />
+        <activity android:name=".DetailsActivityName"></activity>
+    </application>
+
+</manifest>
